@@ -4,54 +4,100 @@
         <title>Ashley Song | Student Page</title>
 
         <style>
-            img{
-                height: 200px;
+            img {
+                height: 100px;
                 width: auto;
+                /* float: left; */
+            }
+
+            .main {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .notmain {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            #sidebar {
+			/* background-color: pink; */
+			width: 150px;
+			padding: 15px;
+			/* border-right: 1px solid #000; */
+            }
+
+            .first {
+            width: 500px;
+            }
+
+            .column {
+                float: left;
+                width: 50%;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
             }
         </style>
     </head>
 
-    <h1>Ashley Song</h1>
+    <body>
+        <div class="main">
+            <h1>Ashley Song</h1>
+            <p><a href="mailto:ajsong@usc.edu">ajsong@usc.edu</a></p>
+             <hr>
 
-    <a href="mailto:ajsong@usc.edu">ajsong@usc.edu</a>
+             <div class="column">
+                <p1>Favorite color:</p1>
+                    <p2>
+                        <em><style> p2 {
+                            background-color: lightblue;
+                        }
+                    </style>Light Blue</em></p2>
+                        <p>Favorite website: <a href="https://www.newbalance.com/">New Balance</a></p>
+                        <p>Favorite activity:</p>
+                        <p><img src="https://sarahmaker.com/wp-content/uploads/2021/07/how-to-double-crochet-24-768x1024.jpg" alt="Crochetting"></p>
+                    
+                        <p>Assignments:
+                            <ul>
+                                <li>Research Paper #1</li>
+                            </ul>
+                        </p>
+                    </div>
 
-    <hr>
+        <div class="column">            
+                <p>Fall 2023 Classes:</p>
+                    <ul>
+                        <li>COMM 301</li>
+                        <li>COMM 324</li>
+                        <li>GEOL 105</li>
+                        <li>EALC 215</li>
+                        <li>ITP 104</li>
+                    </ul>
+                    <p>Completed labs:
+                        <ul>
+                            <li><a href="index.html">Lab 2</a></li>
+                        </ul>
+                    </p>
+        </div> <!--column-->
 
-    <p1>Favorite color:</p1>
-        <p2>
-<em><style> p2 {
-    background-color: lightblue;
-        }</style> Light Blue</em></p2>
-
-<p>Favorite website: <a href="https://www.newbalance.com/">New Balance</a></p>
-
-<p>Favorite activity: <img src="https://sarahmaker.com/wp-content/uploads/2021/07/how-to-double-crochet-24-768x1024.jpg" alt="Crochetting">
-</p>
-
-<hr>
-
-<p>Fall 2023 Classes:</p>
+<!-- <div class="notmain"> -->
+    <!-- <p>Assignments:
+        <ul>
+            <li>Research Paper #1</li>
+        </ul>
+    </p> -->
+    <!-- <p>Completed labs:
     <ul>
-        <li>COMM 301</li>
-        <li>COMM 324</li>
-        <li>GEOL 105</li>
-        <li>EALC 215</li>
-        <li>ITP 104</li>
+        <li><a href="index.html">Lab 2</a></li>
     </ul>
-
-    <hr>
-    <p>Assignments:
-        <ul>
-<li>Research Paper #1</li>
-
-        </ul>
-    </p>
-
-    <p>Completed labs:
-        <ul>
-<li><a href="index.html">Lab 2</a></li>
-
-        </ul>
-    </p>
+</p> -->
+<!-- </div> notmain -->
+</div> 
 
 </html>
