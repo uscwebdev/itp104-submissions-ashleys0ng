@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hana College Ministry | Rides Form</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+        h1 {
+            color: #a4bed4;
+            text-shadow: 0px 0px 1px #d2d2d2;
+            margin: 0px;
+        }
+        body {
+            margin: 0px;
+            padding: 15px;
+        }
+        #main {
+			width: 700px;
+            /* background-color: rgb(123, 163, 140); */
+			margin-left: auto;
+			margin-right: auto;
+			padding: 15px;
+		}
+        .form-row {
+			margin: 10px 0px;
+			display: flex;
+		}
+
+		.left-col {
+			width: 250px;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Hana College Ministry Rides Form</h1>
+        <p>Please fill out this form by Friday at 12pm so we can accomodate you!</p>
+		<form action="lab_05_confirmation.html">
+			<div class="form-row">
+				<div class="left-col">
+					<label for="name-id">Name:</label>
+			</div>
+				<input type="text" id="name-id" placeholder="Ashley Song">	
+			</div>
+			
+			<div class="form-row">
+				<div class="left-col">
+					<label for="email-id">Email:</label>
+			</div>
+				<input type="email" id="email-id" placeholder="ajsong@usc.edu">	
+			</div>
+
+            <div class="form-row">
+				<div class="left-col">
+					<label for="phone-id">Phone Number:</label>
+			</div>
+				<input type="phone" id="phone-id">	
+			</div>
+
+            <div class="form-row">
+				<div class="left-col">
+					<label for="school-id">What school do you attend?</label>
+			</div>
+				<input type="school" id="school-id">	
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					Year:
+				</div>
+
+				<label>
+					<input type="radio" name="year">
+					Freshman
+				</label>
+
+                <label>
+					<input type="radio" name="year">
+					Sophomore
+				</label>
+
+                <label>
+					<input type="radio" name="year">
+					Junior
+				</label>
+
+				<label>
+					<input type="radio" name="year">
+					Senior
+				</label>
+
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					Do you need a ride to and from Hana, only there, or only back?
+				</div>
+
+				<label>
+					<input type="checkbox">
+					To Hana
+				</label>
+
+				<label>
+					<input type="checkbox">
+					From Hana
+				</label>
+
+                <label>
+					<input type="checkbox" id="other">
+                    To Hana (Late)
+                        <input type="other" id="other-id" placeholder="What time can you go?">	
+				</label>
+            </div>
+
+			<div class="form-row">
+				<div class="left-col">
+					<label for="loc-id">Where should we pick you up?</label>
+				</div>
+
+				<select id="loc-id">
+                    <option>Select Location</option>
+					<option>Buena Park</option>
+					<option>Fullerton</option>
+					<option>Cypress</option>
+				</select>
+			</div>
+ 
+			<div class="form-row">
+				<div class="left-col">
+					<label for="msg-id">Any questions?</label>
+				</div>
+
+				<textarea id="msg-id" placeholder="Type here..."></textarea>
+			</div>
+
+			<div class="form-row">
+				<button type="submit">Submit</button>
+				<button type="reset">Clear</button>
+			</div>
+		</form>
+ 
+	</div> <!-- #main -->
+</body>
+</html>

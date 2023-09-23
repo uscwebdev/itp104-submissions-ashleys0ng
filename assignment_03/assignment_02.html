@@ -2,93 +2,82 @@
 <html>
 <head>
 
-	<title>Reputation | Interests Page</title>
+    <title>Reputation | Interests Page</title>
 
-	<style>
-		h2 {
-			color: rgb(17, 17, 86);
-		}
-
-        h3 {
-			color: rgb(17, 17, 86);
-		}
-
-        body {
+    <style>
+        .body {
             color: #FFF;
             margin: 0px;
 		}
 
-		#header {
-			background-image: url(https://media.pitchfork.com/photos/6352cb4cb7adcc707967b14f/3:2/w_6000,h_4000,c_limit/Taylor-Swift-Reputation.jpg);
-			height: 400px;
-			background-size: cover;
+        .h1 {
+			margin: 0px;
+		}
+
+        .h2 {
+            color: rgb(17, 17, 86);
+        }
+        .h3 {
+            color: rgb(17, 17, 86);
+        }
+        #main {
+				background-color: rgb(175, 175, 190);
+                width: 950px;
+                margin-left: auto;
+                margin-right: auto;
+                /* margin: 0 auto;
+                margin-right: auto;
+				margin-left: auto; */
+				/* border: 5x solid #ffffff; */
+                border-left: 1px solid #ffffff;
+                border-right: 1px solid #ffffff;
+
+				padding: 25px;
+				margin: 50px
+			}
+
+        #header {
+            height: 500px;
+            text-align: center;
+            line-height: 500px;
+
+            background-image: url(https://media.pitchfork.com/photos/6352cb4cb7adcc707967b14f/3:2/w_6000,h_4000,c_limit/Taylor-Swift-Reputation.jpg);
+            background-size:cover;
 			background-position: center;
-			color: #FFF;
-			font-size: 1.5em;
-			text-align: center;
-			line-height: 500px;
-		}
-		#main {
-			background-color: rgb(175, 175, 190);
-            width: 700px;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 15px;
-			border-left: 1px solid #686b86;
-			border-right: 1px solid #686b86;
-		}
-		#sidebar {
-			background-color: rgb(201, 201, 216);
-			width: 250px;
-			padding: 15px;
-			border-right: 1px solid #686b86;
-		}
-		#wrapper {
-			background-color: yellow;
-			display: flex;
-			width: 950px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		#footer {
-            background-color: #252531;
-			color: #FFF;
-			text-align: center;
-			height: 50px;
-			line-height: 50px;
-			font-size: 0.8em;
+
+            color: #FFF;
+            text-shadow: 0px 0px 10px #000;
         }
 
-		/* #gallery {
+        #p {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #wrapper {
+			background-color: yellow;
 			display: flex;
-			align-items: flex-start;
-			flex-wrap: wrap;
-		} */
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
 
-		.thumbnail {
-			/* 
-				width of #main = 600px
-				number of images = 4
-				width per image = 600px / 4
-								= 150px
-			*/
-			width: 150px;
-			height: auto;
-
-			margin: 5px;
-
-			/* 150px - 5px left - 5px right = 140px */
-			width: 140px;
-
-			border: 1px solid black;
-			/* 140px - 1px left - 1px right = 138px */
-			width: 138px;
 		}
 
-        /* .p {
-            margin-right: auto;
-            margin-left: auto;
-        } */
+        #footer {
+				background-color: #171720;
+				text-align: center;
+				color: #FFF;
+				height: 50px;
+				line-height: 50px;
+			}
+
+        #sidebar {
+            background-color: pink;
+            width: 150px;
+			padding: 15px;
+			border-right: 1px solid #000;
+        }
 
         #tiw {
             float: right;
@@ -108,55 +97,23 @@
             width: 250px;
         }
 
-        #sb1 {
-            float: right;
-            height: auto;
-            width: 180px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 25px;
-        }
-
-        #sb2 {
-            float: right;
-            height: auto;
-            width: 200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 15px;
-        }
-
-        #sb3 {
-            float: right;
-            height: auto;
-            width: 200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 15px;
-        }
-
-        #sb4 {
-            float: right;
-            height: auto;
-            width: 200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 15px;
-        }
-	</style>
-
+    </style>
+    
 </head>
-<body>
 
-	<div id="header">
-		<h1><em>Reputation</em> by Taylor Swift</h1>
-	</div> <!-- #header -->
+    <body>
 
-	<div id="wrapper">
-		<div id="main">
-			<h2>Favorite Songs:</h2>
+    <div id="header">
+        <h1><em>Reputation</em> by Taylor Swift</h1>
+    </div>
+    <!--#header-->
+
+    <div id="wrapper">
+        <div id="main">
+            <h2>Favorite Songs:</h2>
                 <h3><em> This Is Why We Can't Have Nice Things</em></h3>
-                <img id="tiw" src="https://i.pinimg.com/736x/d0/8e/34/d08e340d70dad16cf20859a5c0f53a5b.jpg" alt="TIWWCHNT">
+
+            <img id="tiw" src="https://i.pinimg.com/736x/d0/8e/34/d08e340d70dad16cf20859a5c0f53a5b.jpg" alt="TIWWCHNT">
 
             <p id="paragraph-1"><strong>"This Is Why We Can't Have Nice Things"</strong> is a track from Taylor Swift's 2017 album "Reputation," which marked a significant departure from her earlier sound and lyrical themes. In this song, Swift seems to take on a more vengeful and unapologetic persona, addressing the betrayal and drama she's faced in her public and private life. The title itself suggests a sense of frustration and disappointment, as if Swift is pointing out that the tumultuous nature of fame and relationships has prevented her from enjoying the simple joys of life. The song is marked by its catchy pop beat and a playful tone that blends with its biting lyrics. It's a standout track that captures the essence of Taylor Swift's "Reputation" era, where she unapologetically embraced her newfound image and channeled her emotions into her music.</p>
 
@@ -178,27 +135,17 @@
 
         </div>
     <!--main-->
+    
+    <div id="sidebar">
+        <h2>more</h2>
+    </div>
+    <!--sidebar-->
+    </div>
+    <!--wrapper-->
 
-		<div id="sidebar">
-            <p><img id="sb1" src="img_03/taylor-swift-reputation-stadium-tour-auckland.jpeg" alt="Reputation Era Photo1">
-                <em><strong>Reputation Era at the Eras Tour</em></p>
-
-            <p><img id="sb2" src="img_03/GettyImages-956299430.jpeg" alt="Reputation Era Photo2">
-                <em><strong>2018 Reputation Tour</em></p>
-        
-            <p><img id="sb3" src="img_03/gettyimages-1019085412.jpg.jpg" alt="Reputation Era Photo3">
-                <em><strong>Acoustic Set - Reputation Tour</em></p>
-
-            <p><img id="sb4" src="img_03/sb4.jpg" alt="Reputation Era Photo4">
-                <em><strong>2018 Reputation Tour</em></p>
-        </div>
-		<!-- #sidebar -->
-	</div> 
-	<!-- #wrapper -->
-
-	<div id="footer">
+    <div id="footer">
 		Ashley Song &copy; 2023
-	</div> <!-- #footer -->
-
+	</div>
+    <!--footer-->
 </body>
 </html>
