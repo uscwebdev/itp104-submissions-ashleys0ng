@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Miffy Photo Gallery</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+        #main {
+            width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			padding-bottom: 50px;
+        }
+        h2 {
+            text-align: center;
+            color:rgb(137, 148, 172);
+        }
+        #gallery {
+			display: flex;
+            flex-wrap: wrap;
+			align-items: flex-start;
+            justify-content: center;
+            row-gap: 5px;
+    		}
+        .thumbnail {
+			width: 140px;
+			height: auto;
+			margin: 5px;
+			opacity: 0.75;
+		}
+
+		.thumbnail:hover {
+			opacity: 1.0;
+		}
+
+		.img-container > p {
+			text-align: center;
+			visibility: hidden;
+		}
+
+		.thumbnail:hover + p {
+			display: block;
+			visibility: visible;
+		}
+    </style>
+
+
+</head>
+
+<body>
+    <div id="main">
+		<h2 id="images-section">Miffy Image Gallery</h2>
+
+		<div id="gallery">
+			<div class="img-container">
+				<img class="thumbnail" src="img/car_miffy.jpeg" alt="Miffy Photo">
+				<p>Miffy posing for a photo</p>
+			</div>
+
+            <div class="img-container">
+				<img class="thumbnail" src="img/miffy_snowman.jpeg" alt="Miffy making SnowMiffy">
+				<p>Miffy making SnowMiffy</p>
+			</div>
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/headphone_miffy.jpeg" alt="Miffy listening to music">
+				<p>Miffy listening to music</p>
+			</div>
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/jakanim_miffy.jpeg" alt="Artist Miffy">
+				<p>Artist Miffy</p>
+			</div>
+
+            <div class="img-container">
+				<img class="thumbnail" src="img/terry_miffy.jpeg" alt="Pink and White Miffy">
+				<p>Pink + White Miffy</p>
+			</div>
+		</div> <!-- #gallery -->
+
+
+</body>
+</html>
