@@ -49,16 +49,16 @@
 		}
 
         #navbar a {
-        text-decoration: none;
-        /* background-color: #FC0; */
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        display: block;
-        color: rgb(123, 123, 172);
-        border-bottom: 2px solid #FFF;
-        }
+            text-decoration: none;
+            /* background-color: #FC0; */
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+            color: rgb(123, 123, 172);
+            border-bottom: 2px solid #FFF;
+            }
 
 		#navbar {
 			display: flex;
@@ -70,24 +70,31 @@
 			color: rgb(48, 48, 124);
 			border-bottom: 2px solid rgb(17, 17, 86);
         }
-        
-        /* #gallery {
-			display: flex;
-            flex-wrap: wrap;
-            flex:content;
-            align-content: space-around;
-			align-items: baseline;
-            justify-content: center;
-            row-gap: 5px;
-    		} */
 
         #gallery {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center;
-        row-gap: 5px;
+            display: flex;
+            flex-wrap: nowrap;
         }
+        #gallery1 {
+			display: flex;
+            flex-wrap: wrap;
+			align-items: flex-start;
+            justify-content: right;
+    		}
+
+        #gallery2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            }
+
+        #gallery3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: left;
+            }
 
         .thumbnail {
 			width: 200px;
@@ -111,53 +118,45 @@
             <h2 id="images-section">Reputation Era Image Gallery</h2>
 
             <div id="gallery">
-                <div class="img-container">
+                <div id="gallery1">
                     <img class="thumbnail" src="img_03/gal1.webp" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery1">
                     <img class="thumbnail" src="img_03/gal2.png" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery1">
                     <img class="thumbnail" src="img_03/gal3.jpeg" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery2">
                     <img class="thumbnail" src="img_03/gal4 copy.jpg" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery2">
                     <img class="thumbnail" src="img_03/gal5.jpeg" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery2">
                     <img class="thumbnail" src="img_03/gal6.jpeg" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery2">
                     <img class="thumbnail" src="img_03/gal7 copy.jpg" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery3">
                     <img class="thumbnail" src="img_03/gal8.jpeg" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery3">
                     <img class="thumbnail" src="img_03/gal9.jpeg" alt="Rep Photo 1">
-            </div>
+                </div>
 
-            <div id="gallery">
-                <div class="img-container">
+                <div id="gallery3">
                     <img class="thumbnail" src="img_03/gal10 copy.jpg" alt="Rep Photo 1">
+                </div>
             </div>
 </body>
 </html>
