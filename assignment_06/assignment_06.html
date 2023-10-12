@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Reputation | Interests Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+	
+    <style>
+        @font-face {
+			/* font file path relative to this HTML file */
+			src: url('fonts/HappyTimeThree.otf');
+			/* font name to be used throughout this file */
+			font-family: "Happy-Time";
+		}
+    
+		h2 {
+			color: rgb(17, 17, 86);
+            font-family: 'Happy-Time';
+            /* font-size: 2em;
+			font-weight: normal; */
+		}
+
+        h3 {
+			color: rgb(17, 17, 86);
+            font-family: 'Happy-Time', cursive;
+		}
+
+        body {
+            color: #FFF;
+            margin: 0px;
+		}
+
+		#header {
+			background-image: url(img_06/rep-header.webp);
+			height: 400px;
+			background-size: cover;
+			background-position: center;
+			color: #FFF;
+
+            font-family: 'UnifrakturMaguntia', cursive;
+			font-size: 1.5em;
+
+			text-align: center;
+			line-height: 500px;
+			text-shadow: 0px 0px 10px #000;
+		}
+		#main {
+			background-color: rgb(175, 175, 190);
+            width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 15px;
+			border-left: 1px solid #686b86;
+			border-right: 1px solid #686b86;
+		}
+		#sidebar {
+			background-color: rgb(201, 201, 216);
+			width: 250px;
+			padding: 15px;
+			border-right: 1px solid #686b86;
+		}
+		#wrapper {
+			background-color: yellow;
+			display: flex;
+			width: 950px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#footer {
+            background-color: #252531;
+			color: #FFF;
+			text-align: center;
+			height: 50px;
+			line-height: 50px;
+			font-size: 0.8em;
+        }
+
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+
+		.thumbnail {
+			/* 
+				width of #main = 700px
+				number of images = 4
+				width per image = 700px / 4
+								= 175px
+			*/
+			width: 175px;
+			height: auto;
+
+			margin: 5px;
+			/* width: 140px; */
+			width: 138px;
+		}
+
+        .p {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #tiw {
+            float: right;
+            height: 250px;
+            width: auto;
+        }
+
+        #komh {
+            float: left;
+            height: 200px;
+            width: auto;
+        }
+
+        #ciw {
+            float: right;
+            height: auto;
+            width: 250px;
+        }
+
+        #sb1 {
+            float: right;
+            height: auto;
+            width: 180px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 25px;
+        }
+
+        #sb2 {
+            float: right;
+            height: auto;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+
+        #sb3 {
+            float: right;
+            height: auto;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+
+        #sb4 {
+            float: right;
+            height: auto;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            /* background-color: #FC0; */
+            /* width: 200px; */
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+            color: rgb(255, 255, 255);
+            /* border-bottom: 2px solid #FFF; */
+		}
+
+		#navbar {
+			display: flex;
+			justify-content: center;
+			/* box-shadow: 0px 3px 5px #777; */
+
+            position: fixed;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			z-index: 0;
+		}
+
+		#navbar a:hover, #navbar #highlight-nav {
+			background-color: rgb(208, 208, 240);
+			border-bottom: 2px solid rgb(208, 208, 240);
+        }
+
+        #navbar li {
+			background-color: rgb(17, 17, 86);
+			/* 
+				width of #main 700px;
+				700px / 3 = 175px;
+			*/
+			width: 233.33px;
+            list-style: none;
+            position: relative;
+		}
+
+        #top-menu {
+			display: flex;
+			align-items: flex-start;
+			/* justify-content: center; */
+		}
+
+        #top-menu ul {
+			position: absolute;
+			display: none;
+		}
+
+		#sub-menu ul {
+            top: 0px;
+			left: 180px;
+		}
+
+        #navbar li:hover {
+            color:rgb(245, 245, 245);
+        }
+
+        #navbar li:hover > ul {
+			display: block;
+		}
+
+        .thumbnail {
+			width: 140px;
+			height: auto;
+			margin: 5px;
+			opacity: 0.75;
+		}
+
+		.thumbnail:hover {
+			opacity: 1.0;
+		}
+
+		.img-container > p {
+			text-align: center;
+			visibility: hidden;
+		}
+
+		.thumbnail:hover + p {
+			display: block;
+			visibility: visible;
+		}
+	</style>
+
+</head>
+<body>
+    <div id="header">
+		<h1><em>Reputation</em> by Taylor Swift</h1>
+	</div>
+
+    <div id="navbar">
+
+        <ul id="top-menu">
+            <li><a href="assignment_06.html#home-section">Home</a></li>
+            <li>
+                <a href="assignment_06.html#fav-section">Favorite Songs</a>
+                    <ul id="sub-menu">
+                        <li><a href="assignment_06.html#song-1">TIWWCHNT</a></li>
+                        <li><a href="assignment_06.html#song-2">King Of My Heart</a></li>
+                        <li><a href="assignment_06.html#song-3">Call It What You Want</a></li>
+                    </ul>      
+            </li>
+            <li><a href="gallery.html">Images</a></li>
+        </ul>
+
+	</div> <!-- #navbar -->
+
+	<div id="wrapper">
+		<div id="main">
+			<h2 id="fav-section">Favorite Songs:</h2>
+                <h3 id="song-1"><em> This Is Why We Can't Have Nice Things</em></h3>
+                <img id="tiw" src="img_06/tiw.jpeg" alt="TIWWCHNT">
+
+            <p id="paragraph-1"><strong>"This Is Why We Can't Have Nice Things"</strong> is a track from Taylor Swift's 2017 album "Reputation," which marked a significant departure from her earlier sound and lyrical themes. In this song, Swift seems to take on a more vengeful and unapologetic persona, addressing the betrayal and drama she's faced in her public and private life. The title itself suggests a sense of frustration and disappointment, as if Swift is pointing out that the tumultuous nature of fame and relationships has prevented her from enjoying the simple joys of life. The song is marked by its catchy pop beat and a playful tone that blends with its biting lyrics. It's a standout track that captures the essence of Taylor Swift's "Reputation" era, where she unapologetically embraced her newfound image and channeled her emotions into her music.</p>
+
+            <p id="paragraph-2"><strong>"This Is Why We Can't Have Nice Things"</strong> serves as a powerful statement on the complexities of fame and the toll it can take on personal relationships. Through its witty lyrics and sarcastic tone, Swift reflects on the betrayals she's experienced and the damage caused by those she trusted. The song's chorus, with its repetition of the titular phrase, drives home the idea that the public spectacle of her life has prevented her from maintaining the innocence and simplicity of "nice things." Ultimately, the track is a testament to Swift's songwriting prowess, as she uses her music to navigate the highs and lows of her celebrity status and relationships, providing her fans with a glimpse into her world while simultaneously critiquing the very industry that sustains her fame.</p>
+
+            <h3 id="song-2"><em>King Of My Heart</em></h3>
+            <img id="komh" src="img_06/komh.jpeg" alt="KOMH">
+
+            <p id="paragraph-3"><strong>"King of My Heart"</strong> beautifully captures the intoxicating feeling of falling in love and allowing someone to become the center of your world. Taylor Swift's lyrics paint a vivid picture of a blossoming romance where she is swept off her feet and entranced by the person she loves. The chorus, in particular, is a powerful declaration of the depth of her emotions, as she sings, "And all at once, you are the one I have been waiting for / King of my heart, body, and soul." With its pulsating beats and electronic elements, the song perfectly encapsulates the sense of euphoria and emotional surrender that often accompanies the early stages of a passionate relationship.</p>
+            <p id="paragraph-4">On a special note, Taylor Swift's dedication to her fans is evident through her surprise performances of "King of My Heart." On August 8th, she delighted her audience at a live show by choosing this song as the surprise performance. Such moments create an intimate connection between the artist and her fans, as they get to experience the magic of her music up close and personal. The choice of this song as a surprise addition is a testament to its popularity and its ability to resonate with audiences, making it a cherished memory for those who were fortunate enough to attend the show. Taylor Swift's live renditions of "King of My Heart" continue to showcase her artistry and her genuine affection for her dedicated fan base.</p>
+
+            <h3 id="song-3"><em>Call It What You Want</em></h3>
+            <p id="paragraph-5">In this song, Swift opens up about finding love and solace amidst the chaos and scrutiny of her public life. The lyrics reveal a sense of redemption and tranquility as she describes her growing relationship with someone who accepts her for who she truly is, flaws and all. Swift's vulnerability shines through as she sings, "My castle crumbled overnight / I brought a knife to a gunfight / They took the crown, but it's alright." These lines reflect her resilience in the face of adversity and how love has helped her rebuild and regain her sense of self.</p>
+            <img id="ciw" src="img_06/ciw.webp" alt="CIWYW">
+
+            <p id="paragraph-6">The song's chorus, with its catchy melody and memorable refrain, underscores the idea that love transcends judgment and criticism: "My baby's fit like a daydream / Walking with his head down / I'm the one he's walking to / So call it what you want, yeah, call it what you want to." "Call It What You Want" is a poignant reminder of the power of love to heal and transform, and it serves as a significant chapter in Taylor Swift's journey of self-discovery and artistic evolution.</p>
+
+            <p><em>Click <a href="https://open.spotify.com/album/4fW1sFeE43nuZlAw2xtmC3" target="_blank">here</a> to listen to the full album.</em></p>
+
+        </div>
+    <!--main-->
+
+		<div id="sidebar">
+            <div class="img-container">
+                <img class="thumbnail" id="sb1" src="img_06/taylor-swift-reputation-stadium-tour-auckland.jpeg" alt="Reputation Era Photo1">
+                <p><em><strong>Reputation Era at the Eras Tour</strong></em></p>
+            </div>
+
+            <div class="img-container">
+                <img class="thumbnail" id="sb2" src="img_06/GettyImages-956299430.jpeg" alt="Reputation Era Photo2">
+                <p><em><strong>2018 Reputation Tour</strong></em></p>
+            </div>
+
+            <div class="img-container">
+                <img class="thumbnail" id="sb3" src="img_06/gettyimages-1019085412.jpg.jpg" alt="Reputation Era Photo3">
+                <p><em><strong>Acoustic Set - Reputation Tour</strong></em></p>
+            </div>
+
+            <div class="img-container">
+                <img class="thumbnail" id="sb4" src="img_06/sb4.jpg" alt="Reputation Era Photo4">
+                <p><em><strong>2018 Reputation Tour</strong></em></p>
+            </div>
+        </div>
+		<!-- #sidebar -->
+	</div> 
+	<!-- #wrapper -->
+
+	<div id="footer">
+		Ashley Song &copy; 2023
+	</div> <!-- #footer -->
+
+</body>
+</html>

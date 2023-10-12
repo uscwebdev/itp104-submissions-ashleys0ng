@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reputation | Gallery</title>
+
+    <style>
+        h2 {
+			color: rgb(17, 17, 86);
+		}
+
+        h3 {
+			color: rgb(17, 17, 86);
+		}
+
+        body {
+            color: #FFF;
+            margin: 0px;
+		}
+
+		#header {
+			background-image: url(img_06/gallery-header.jpeg);
+			height: 350px;
+			background-size: cover;
+			background-position: center;
+			color: #FFF;
+			font-size: 1.5em;
+			text-align: center;
+			line-height: 450px;
+			text-shadow: 0px 0px 10px #000;
+		}
+
+        #main {
+			background-color: rgb(175, 175, 190);
+            width: 950px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 15px;
+			border-left: 1px solid #686b86;
+			border-right: 1px solid #686b86;
+		}
+
+		#wrapper {
+			background-color: yellow;
+			display: flex;
+			width: 950px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+
+        #navbar a {
+            text-decoration: none;
+            /* background-color: #FC0; */
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+            color: rgb(123, 123, 172);
+            border-bottom: 2px solid #FFF;
+            }
+
+		#navbar {
+			display: flex;
+			justify-content: center;
+			box-shadow: 0px 3px 5px #777;
+		}
+
+		#navbar a:hover, #navbar #highlight-nav {
+			color: rgb(48, 48, 124);
+			border-bottom: 2px solid rgb(17, 17, 86);
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail {
+			width: 200px;
+			height: auto;
+			margin: 5px;
+		}
+
+        .img-container {
+			/* background-color: #CCC; */
+			margin: 10px;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			position: relative;
+		}
+		.overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+
+			/* background-color: #000; */
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+
+			padding-top: 100px;
+
+			visibility: hidden;
+
+			/* display: flex;
+			align-items: center;
+			justify-content: center; */
+
+			/* opacity: 0.5; */
+		}
+		.img-container:hover > .overlay {
+			visibility: visible;
+		}
+		.img-container > img {
+			/* width: 100%;
+			height: auto; */
+			height: 100%;
+			width: auto;
+			/* position: relative; */
+			/* top: 100px; */
+			/* left: 100px; */
+			/* right: 70px; */
+		}
+		.img-container > .width-100 {
+			width: 100%;
+			height: auto;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+		<h1>Gallery</h1>
+	</div> <!-- #header -->
+
+    <div id="navbar">
+        <a href="assignment_06.html#home-section">Home</a>
+        <a id="highlight-nav" href="gallery.html#images-section">Gallery</a>
+    </div>
+    <div id="wrapper">
+        <div id="main">
+            <h2 id="images-section">Reputation Era Image Gallery</h2>
+
+            <div id="gallery">
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal1f.jpg" alt="Rep Photo 1">
+                    <div class="overlay">Big Reputation</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal2.png" alt="Rep Photo 1">
+                    <div class="overlay">I swear I don’t love the drama, it loves me.</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal3.jpeg" alt="Rep Photo 1">
+                    <div class="overlay">I don’t trust nobody and nobody trusts me.</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal4 copy.jpg" alt="Rep Photo 1">
+                    <div class="overlay">You're so gorgeous.</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal5.jpeg" alt="Rep Photo 1">
+                    <div class="overlay">Don't blame me, love made me crazy.</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal6.jpeg" alt="Rep Photo 1">
+                    <div class="overlay">Cause all the boys in their expensive cars-</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal7 copy.jpg" alt="Rep Photo 1">
+                    <div class="overlay">All the liars are calling me one.</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal8.jpeg" alt="Rep Photo 1">
+                    <div class="overlay">Here’s a toast to my real friends, they don’t care about the he said – she said.</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal9.jpeg" alt="Rep Photo 1">
+                    <div class="overlay">It hit you like a shotgun shot in the heart.</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img_06/gal10 copy.jpg" alt="Rep Photo 1">
+                    <div class="overlay">Up on the roof with a school girl crush.</div>
+                </div>
+            </div>
+</body>
+</html>
