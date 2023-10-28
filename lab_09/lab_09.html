@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Owala | Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=VT323&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            /* color: #FFF; */
+            margin: 0px;
+		}
+
+        h2 {
+            font-family: 'UnifrakturMaguntia', cursive;
+            font-family: 'VT323', monospace;
+        }
+
+        #form {
+            text-align: center;
+        }
+
+        .form-row {
+			text-align: center;
+            margin: 10px 0px;
+			display: flex;
+		}
+
+		.left-col {
+			text-align: center;
+            width: 200px;
+		}
+
+        #section {
+            text-align: center;
+        }
+
+        #reviews, #why {
+            text-align: center;
+        }
+        #header {
+            background-image: url(img/owala-header.jpeg);
+            height: 600px;
+            width: 830px;
+            background-size: cover;
+            background-position: center;
+            margin-top: 40px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            text-align: center;
+            font-size: 1.25em;
+
+            color: rgb(15, 8, 76);
+            line-height: 575px;
+            text-shadow: 0px 0px 10px rgb(255, 201, 249);
+        }
+
+        #main {
+            /* color: rgb(15, 8, 76); */
+            background-color: rgba(105, 90, 205, 0.534);
+            width: 800px;
+            margin-left: auto;
+			margin-right: auto;
+			padding: 15px;
+        }
+
+        #wrapper {
+			display: flex;
+			width: 1080px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+        #navbar a {
+            text-decoration: none;
+            height: 25px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+            color: rgb(0, 0, 0);
+        }
+        #navbar {
+            background-color: rgba(255, 255, 255, 0);
+            width: 860px;
+            display: flex;
+            justify-content: center;
+            /* height: 25px; */
+
+            position: fixed;
+			top: -17.5px;
+			left: 290px;
+			right: 0px;
+			z-index: 0;
+
+            font-family: 'UnifrakturMaguntia', cursive;
+            font-family: 'VT323', monospace;
+        }
+
+        #navbar li {
+			/* 
+				width of #main 700px;
+				700px / 3 = 175px;
+			*/
+            width: 207.5px;
+
+            list-style: none;
+            position: relative;
+		}
+
+        #navbar a:hover, #navbar #highlight-nav {
+			color: rgb(173, 10, 83);
+        }
+
+        #top-menu {
+			display: flex;
+            text-align: center;
+		}
+
+        #top-menu ul {
+			position: absolute;
+			display: none;
+		}
+
+        iframe {
+			width: 100%;
+			height: 315px;
+			border: none;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h2><em>Water bottles designed exclusively for people who drink water.</em></h2>
+    </div>
+
+    <div id="navbar">
+        <ul id="top-menu">
+            <li><a href="lab_09.html#home-section">HOME</a></li>
+            <li><a href="lab_09.html">PRODUCTS</a></li>
+            <li><a href="lab_09.html">FAQ</a></li>
+            <li><a href="lab_09.html">CONTACT</a></li>
+        </ul>
+    </div> <!--navbar-->
+
+    <div id="wrapper">
+        <div id="main">
+            <div id="why">
+                <h2 id="section">WHY OWALA?</h2>
+                <iframe src="https://www.youtube.com/embed/1ETem5wqzPw?si=7b9e901MyAEiiN-X" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Every Owala® water bottle is engineered to make it ridiculously easy to stay hydrated.  Because we believe that a properly hydrated human is a happy human. And happy humans tend to spend more time doing what they love. </p>
+            </div> <!--why-->
+            
+            <div id="reviews">
+                <h2 id="section">CUSTOMER TESTIMONIALS</h2>
+                <p><em>"I love these water bottles. They are so easy to carry! I love the fun colors!"</em></p>
+                <p><em>"Exactly what I was looking for and it is very large!"</em></p>                
+                <p><em>"I love this bottle! It is so perfect, it keeps my water so cold for so long. best bottle!"</em></p>
+            </div>
+    
+            <div id="form">
+                <h2 id="section">JOIN THE OWALA FAMILY</h2>
+                <p>Stay updated by joining our mailing list!</p>
+                <form id="fill-form">
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="name-id">Name:</label>
+                        </div>
+                        <input type="text" id="name-id" placeholder="Owala #1 Fan">	
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="email-id">Email:</label>
+                    </div>
+                        <input type="email" id="email-id" placeholder="owala1fan@usc.edu">	
+                    </div>
+
+                    <div class="form-row">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+        </div> <!--main-->
+
+        <!-- <div id="form">
+            <h2 id="section">Join the Owala Family</h2>
+        </div> -->
+    </div> <!--wrapper-->
+</body>
+</html>
