@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Lab 10: CSS Effects</title>
+    <style>
+        img {
+            width: 200px;
+        }
+
+        .img1 {
+            left: 15px;
+            top: 15px;
+            position: absolute;
+            z-index: -1;
+
+            transition: all 1s;
+        }
+
+        .img1:hover {
+            transform: scale(2) rotate(45deg) translateX(200px);;
+        }
+
+        .img2 {
+            left: 40px;
+            top: 25px;
+            position: absolute;
+            z-index: -1;
+
+            transition: all 2s;
+        }
+
+        .img2:hover {
+            transform: scale(1.5) rotate(35deg) translateX(200px);;
+        }
+
+        .img3 {
+            left: 60px;
+            top: 40px;
+            position: absolute;
+            z-index: -1;
+
+            transition: all 3s;
+        }
+
+        .img3:hover {
+            transform: scale(1) rotate(25deg) translateX(200px);
+        }
+
+        #container {
+            /* margin-left: auto;
+            margin-right: auto; */
+            opacity: 0.7;
+            transition: all 1s;
+        }
+
+        #container:hover {
+            transform: scale(1) rotate(45deg) translateX(200px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img class="img1" src="img/img1.jpeg" alt="Loopy Image 1">
+        <img class="img2" src="img/img2.jpeg" alt="Loopy Image 2">
+        <img class="img3" src="img/img3.jpeg" alt="Loopy Image 3">
+    </div>
+
+</body>
+</html>
