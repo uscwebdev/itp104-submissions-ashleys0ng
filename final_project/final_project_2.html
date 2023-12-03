@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Espresso Tonic Blog | Ranking + Reviews</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Espresso Tonic Reviews and Ratings Blog for ITP104 Final Project">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+    @media (max-width: 1169px) {
+        #container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap:wrap;
+            display: flex;
+            flex-direction: row;
+            margin-top: 75px;
+        }
+
+        #main {
+            width: 500px;
+        }
+
+        #wrapper {
+            width: 100%;
+            flex: 1;
+        }
+
+        #review {
+            width: 100%;
+            margin-right: 200px;
+            padding-right: 50px;
+            margin-left: 0px;
+        }
+
+        #sidebar {
+            width: 100%;
+            align-content: start;
+            height: 400px;
+            /* height: auto; */
+            box-sizing: border-box;
+
+            flex-wrap: nowrap;
+            margin-bottom: 15px;
+            margin-top: 300px;
+            margin-right: 0;
+        }
+
+        #sidebar h1 {
+            /* height: 50px; */
+            /* margin-top: 15px; */
+            margin: 0px;
+        }
+
+        #sidebar p {
+            height: 100px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #sidebar ol {
+            width: 100%;
+            margin: 0;
+        }
+        #navbar {
+            top: 0;
+            width: 100%;
+            position:absolute;
+            z-index: 1000;
+        }
+
+        #header {
+            /* margin-top: 75px; */
+            height: auto;
+            margin-left: 75px;
+            margin-top: 15px;
+            box-sizing: border-box;
+        }
+
+        /* #header h1 {
+            margin-left: ;
+        } */
+
+        #footer {
+            flex-shrink: 0;
+            margin-top: auto;
+        }
+    }
+
+    @media (max-width: 767px){
+        #container {
+            flex-wrap: wrap;
+            display: flex;
+
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        #main {
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            width: 100%;
+            margin-top: 0;
+            box-sizing: border-box;
+        }
+
+        #sidebar {
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            margin-right: 10px;
+        }
+
+        #sidebar h1 {
+            padding: 0px;
+            box-sizing: border-box;
+        } 
+        #sidebar p {
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #sidebar ol {
+            margin-bottom: 10px;
+        }
+
+        #header {
+            margin-top: 75px;
+        }
+
+        #review {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    #container {
+        width: 100%;
+        /* flex-wrap: nowrap;
+        display: flex; */
+    }
+
+    body {
+        background-color: #fbece9;
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        display: flex;
+        width: 800px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    #main {
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    #navbar {
+        font-family: 'PT Serif', serif;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #sidebar {
+        float: left;
+        display:flex;
+        flex-wrap: wrap;
+        border: 1.25px solid #FF5800;
+        border-radius: 20px;
+
+        font-size: 1em;
+        padding: 5px 15px;
+        color: #412B16;
+        background: transparent;
+        font-family: 'IM Fell DW Pica', serif;
+
+        width: 250px;
+        /* height: auto; */
+        margin-left: 100px;
+        margin-top: 15px;
+        margin-right: 20px;
+        box-sizing: border-box;
+    }
+    #review {
+        display: inline-block;
+        border: 1.25px solid #FF5800;
+        border-radius: 20px;
+
+        font-size: 1em;
+        padding: 5px 15px;
+        color: #412B16;
+        background: transparent;
+        font-family: 'IM Fell DW Pica', serif;
+
+        margin: 15px;
+        margin-top: 15px;
+        flex-wrap: nowrap;
+        width: 675px;
+    }
+
+    a {
+        color: #412b16;
+        text-decoration: none;
+    }
+
+    a:hover, #sidebar li:hover {
+        color: #ff5900a0;
+        transition-duration: 0.2s;
+    }
+    
+    #main h1 {
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    /* #header {
+        text-align:center;
+    } */
+    #header h1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align:center;
+
+        /* margin-top: 10px; */
+    }
+
+    #header h1:hover {
+        font-style: italic;
+    }
+    h1 {
+        font-family: 'IM Fell DW Pica', serif;
+    }
+
+    h2 {
+        font-family: 'IM Fell DW Pica', serif;
+        color: #412B16;
+        font-size: 1.15em;
+        padding: 0px;
+        margin: 0px;
+        color: #FF5800;
+    }
+
+    #orange {
+        color: #FF5800;
+    }
+    h3 {
+        font-family: 'IM Fell DW Pica', serif;
+        color: #412B16;
+        margin: 0px;
+        padding: 0px;
+        text-align:center;
+        /* margin-right: 70px; */
+    }
+
+    p {
+        font-family: 'PT Serif', serif;
+    }
+    
+    li {
+        font-family: 'PT Serif', serif;
+    }
+
+    #top-menu {
+        padding: 0;
+        margin: 0px;
+    }
+    
+
+    #navbar > #navbar li {
+        position: fixed;
+    }
+
+    #navbar a {
+        color:#412B16;
+        text-decoration: none;
+        font-weight: bold;
+        /* transition: color 0.2s; */
+    }
+
+    #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #navbar li {
+        list-style-type: none;
+        /* margin-right: 250px; */
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid transparent;
+        margin-bottom: 5px;
+    }
+
+    #navbar li a {
+        display: block;
+        padding: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    #navbar li a:hover {
+        transition: 0.3s linear;
+    }
+
+    #navbar a:hover, #navbar #highlight-nav {
+        color:#FFF;
+        display: inline-block;
+        border: 1.25px solid #FF5800;
+        border-radius: 20px;
+
+        /* font-size: 1.15em; */
+        padding: 5px 15px;
+        
+        background-color: #FF5800;
+    }
+
+    #sidebar h1 {
+        font-size: 1.25em;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    #sidebar p {
+        padding:5px;
+        padding-left: 0;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    #review ol {
+        margin-top: 5px;
+    }
+
+    #review li {
+        list-style-type: disc;
+    }
+
+    #sidebar ol {
+        margin-top: 0;
+    }
+
+    #review h1 {
+        font-size: 1.25em;
+    }
+
+    #footer {
+        background-color: #392826;
+        color: #FFF;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0.8em;
+        position: relative;
+        margin-bottom: 0;
+        width: 100%;
+    }
+</style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul id="top-menu">
+            <li><a href="final_project.html"><em>HOME</em></a></li>
+            <li><a id="highlight-nav" href="final_project_2.html"><em>RANKING + REVIEWS</em></a></li>
+            <li><a href="final_project_3.html"><em>ABOUT</em></a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+
+        <div id="header">
+            <h1>ranking<em id="orange"> + </em>reviews</h1>
+            <h3>step into my brain :p</h3> 
+        </div>
+
+        <div id="sidebar">
+            <h1><em>the ranking</em></h1>
+            <p>my biased ranking determined by on taste, price, and proximity</p>
+                <ol>
+                    <li><a href="final_project_2.html#smo">smoking tiger</a></li>
+                    <li><a href="final_project_2.html#ste">stereoscope</a></li>
+                    <li><a href="final_project_2.html#hom">homeboy coffee</a></li>
+                    <li><a href="final_project_2.html#mugs">the mugs</a></li>
+                    <li><a href="final_project_2.html#play">play coffee</a></li>
+                    <li><a href="final_project_2.html#lilox">little ox coffee</a></li>
+                    <li><a href="final_project_2.html#holos">holos coffee</a></li>
+                    <li><a href="final_project_2.html#ecb">enchanted coffee bar</a></li>
+                </ol>
+        </div>
+
+        <div id="wrapper">
+
+            <div id="main">
+                <div id="review">
+                    <h1><em>the reviews</em></h1>
+                    <div>
+                        <h2 id="smo">smoking tiger - 9.5/10</h2>
+                        <ol>
+                            <li><em><strong>PRICE:</strong></em> 6.0</li>
+                            <li>same price as stereo but the cup size is larger</li>
+                            <li>soo yummy and citrusy</li>
+                            <li>so close to my house!! so convenient</li>
+                        </ol>
+
+                        <h2 id="ste">stereoscope - 8.9/10</h2>
+                        <ol>
+                            <li><em><strong>PRICE:</strong></em> 6.95</li>
+                            <li>perfect balance between sweet and espresso</li>
+                            <li>SO YUMMY AND REFRESHING</li>
+                            <li>very close to my house</li>
+                            <li>it is very expensive tho and kind of small. gone too quickly</li>
+                        </ol>
+
+                        <h2 id="hom">homeboy coffee - 8/10</h2>
+                        <ol>
+                            <li><em><strong>PRICE:</strong></em> 6.0</li>
+                            <li>really good and citrus is yum</li>
+                            <li>i know it's probably just the ratio but it looks like they don't fill it up enough :')</li>
+                        </ol>
+
+                        <h2 id="mugs">the mugs - 8/10</h2>
+                        <ol>
+                            <li><em><strong>PRICE:</strong></em> 7.75</li>
+                            <li>it's basically 8.......</li>
+                            <li>really good but too much orange syrup... too sweet and overpowers the espresso taste</li>
+                        </ol>
+
+                        <h2 id="play">play coffee - 7.75/10</h2>
+                        <ol>
+                            <li><em><strong>PRICE:</strong></em> 7.0</li>
+                            <li>so expensive for why???? and size????</li>
+                            <li>but the drink is good very orange maybe a little too much but not a bad thing, little sweet</li>
+                        </ol>
+
+                        <h2 id="lilox">little ox coffee - 7.5/10</h2>
+                        <ol>
+                            <li><em><strong>PRICE:</strong></em> 6.5</li>
+                            <li>strong espresso flavor, light guava taste, pretty good but not the most impressive</li>
+                            <li>little pricey but i'd come here again!</li>
+                        </ol>
+
+                        <h2 id="holos">holos coffee - 6/10</h2>
+                        <ol>
+                            <li><em><strong>PRICE:</strong></em> 6.25</li>
+                            <li>very cohesive taste</li>
+                            <li>too lemony i just did not like that</li>
+                            <li>didn't hate it, it was good but i didn't love it</li>
+                        </ol>
+
+                        <h2 id="ecb">enchanted coffee bar - 5.5/10</h2>
+                        <ol>
+                            <li><em><strong>PRICE:</strong></em> 6.0</li>
+                            <li>also kind of lemony and didn't like that</li>
+                            <li>same price as smoking tiger but i wouldn't drink it here over smoking tiger</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+<div id="footer">
+    Ashley Song &copy; 2023
+</div>
+
+</body>
+</html>

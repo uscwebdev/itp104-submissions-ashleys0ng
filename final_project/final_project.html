@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Espresso Tonic Blog</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Espresso Tonic Reviews and Ratings Blog for ITP104 Final Project">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #fbece9;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #main {
+        width: 800px;
+        /* width: 90%;
+        max-width: 1000px; */
+        padding: 15px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #header {
+        /* height: 400px; */
+        float: left;
+        padding-top: 85px;
+    }
+    
+    h1 {
+        font-family: 'IM Fell DW Pica', serif;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-family: 'IM Fell DW Pica', serif;
+        color: #412B16;
+        font-size: 1.25em;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #orange {
+        color: #FF5800;
+    }
+    h3 {
+        font-family: 'IM Fell DW Pica', serif;
+        color: #412B16;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    p {
+        font-family: 'PT Serif', serif;
+    }
+
+    /* #header h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    } */
+    #join {
+        color: #412B16;
+        text-decoration:underline wavy;
+        text-decoration-color: #ff5900de;
+        text-decoration-thickness: 1.5px;
+    }
+
+    #join:hover {
+        font-style: italic;
+        color: #ff5900de;
+        transition: color 0.2s;
+    }
+
+    #navbar {
+        font-family: 'PT Serif', serif;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #navbar > #navbar li {
+        position: fixed;
+    }
+
+    #navbar a {
+        color:#412B16;
+        text-decoration: none;
+        font-weight: bold;
+        /* transition: color 0.2s; */
+    }
+
+    #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #navbar li {
+        list-style-type: none;
+        margin-right: 250px;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px 10px 5px;
+        border: 2px solid transparent;
+        position: relative;
+        bottom: 5px;
+    }
+
+    #navbar li a {
+        display: block;
+        padding: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+
+    #navbar li a:hover {
+        transition: 0.3s linear;
+    }
+
+    #navbar a:hover, #navbar #highlight-nav {
+        color:#FFF;
+        display: inline-block;
+        border: 1.25px solid #FF5800;
+        border-radius: 20px;
+
+        padding: 5px 15px;
+        
+        background-color: #FF5800;
+    }
+
+    .stereo {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        padding: 0px;
+    }
+
+    .block1 {
+        padding: 35px 0px;
+    }
+
+    .block2 {
+        padding: 0px 25px;
+
+        /* padding-left: 0px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0px; */
+
+        width: 350px;
+        /* float: left; */
+
+        box-sizing: border-box;
+    }
+
+    .block3 {
+        padding: 0px 25px;
+        /* padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px; */
+        /* margin: 0px; */
+
+        width: 350px;
+        /* float: right; */
+
+        box-sizing: border-box;
+    }
+
+    .block-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer {
+        background-color: #392826;
+        color: #FFF;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0.8em;
+        position: relative;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .button {
+        display: inline-block;
+        border: 1.25px solid #FF5800;
+        border-radius: 20px;
+
+        font-size: 1.15em;
+        padding: 6.5px 17.5px;
+        color: #412B16;
+        background: transparent;
+        font-family: 'IM Fell DW Pica', serif;
+    }
+
+    .block2 p:hover, .block3 p:hover {
+        color: #FF5800;
+        transition-duration: 0.2s;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul id="top-menu">
+            <li><a id="highlight-nav" href="final_project.html"><em>HOME</em></a></li>
+            <li><a href="final_project_pg2.html"><em>RANKING + REVIEWS</em></a></li>
+            <li><a href="final_project_3.html"><em>ABOUT</em></a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <div class="block1">
+            <div id="header">
+                <h1><em id="orange">welcome!</em> to my espresso tonic blog</h1>
+                <h3><a id="join" href="final_project_2.html">join me</a> on my journey to find the best espresso tonic :p</h3>
+                
+            </div>
+            <img class="stereo" src="img/stereo.png" alt="es">
+        </div>
+
+        <div class="block-container">
+            <div class="block2">
+                <h2 class="button"><em>what is an espresso tonic?</em></h2>
+                <p>an espresso tonic is the most delicious drink (my favorite drink). i like to describe it as a sparkling americano, as it's made with tonic water and an espresso shot. cafes typically add syrup to enhance the flavor and specialize their espresso tonic!</p>
+            </div>
+
+            <div class="block3">
+                <h2 class="button"><em>what is this blog about?</em></h2>
+                <p>i have an entry in my iphone notes app where i write a review for every espresso tonic that i try -- this blog is to store each review in blog format :p</p>
+            </div>
+        </div>
+        
+    </div>
+
+<div id="footer">
+    Ashley Song &copy; 2023
+</div>
+</body>
+</html>
